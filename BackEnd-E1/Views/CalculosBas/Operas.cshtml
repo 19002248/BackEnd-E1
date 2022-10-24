@@ -1,0 +1,32 @@
+﻿@model BackEnd_ejemplo1.Models.OperasBas
+
+@{
+    ViewBag.Title = "Operas";
+}
+
+<h2>Operas</h2>
+
+<h2>Suma</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <form action="/" method="post">
+                <label for="Num1">Numero 1</label>
+                <input type="text" name="Num1" value="" />
+                <br />
+                <label for="Num1">Numero 2</label>
+                <input type="text" name="Num2" value="" />
+                <br />
+                <input type="submit" value="Enviar" />
+            </form>
+        </div>
+        <!--los nombres deben ser los mimsos que las variables para que no haya problemas -->
+        <div class="col-lg-6">
+            <h1>La suma es:</h1>
+            <!-- <h2>@ViewBag.Res</h2> -->
+        <h2>@Model.Res</h2>
+        </div>
+    </div>
+
+</div>
