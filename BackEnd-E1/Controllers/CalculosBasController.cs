@@ -1,4 +1,5 @@
-﻿using BackEnd_ejemplo1.Models;
+﻿using BackEnd_E1.Services;
+using BackEnd_ejemplo1.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,6 +37,19 @@ namespace BackEnd_ejemplo1.Controllers
             op.Suma();
           // ViewBag.Res = op.Res;
             return View(op);
+        }
+
+        public ActionResult MuestraPeliculas()
+        {
+            var pservice = new PeliculasService();
+            var model = pservice.ObtenerPeli();
+            return View(model);
+        }
+        public ActionResult MuestraPeliculas2()
+        {
+            var pservice = new PeliculasService();
+            var model = pservice.ObtenerPeli();
+            return View(model);
         }
     }
 }

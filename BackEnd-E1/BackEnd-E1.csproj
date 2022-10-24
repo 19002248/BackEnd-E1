@@ -169,6 +169,8 @@
     <Content Include="Views\CalculosBas\Index.cshtml" />
     <Content Include="Views\CalculosBas\Operas.cshtml" />
     <Content Include="Views\CalculosBas\Suma.cshtml" />
+    <Content Include="Views\CalculosBas\MuestraPeliculas.cshtml" />
+    <Content Include="Views\CalculosBas\MuestraPeliculas2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

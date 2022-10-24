@@ -9,7 +9,7 @@ namespace BackEnd_E1.Services
 {
     public class PeliculasService
     {
-      public List<Pelicula> ObtenePeli()
+      public List<Pelicula> ObtenerPeli()
         {
             var pelicula1 = new Pelicula()
             {
