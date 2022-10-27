@@ -1,0 +1,17 @@
+﻿@model BackEnd_E1.Models.Trabajador
+
+@{
+    ViewBag.Title = "Agregar";
+}
+
+<h2>Agregar</h2>
+
+<form method="post" class=" form form-group ">
+    @Html.LabelFor(x=>x.Nombre): 
+    @Html.TextBoxFor(x => x.Nombre, new {Style="border-color:blue, size=30"}) <br />
+    Apellidos: @Html.TextBoxFor(x => x.Apellidos) <br />
+    Fecha de Nacimiento: @Html.TextBoxFor(x => x.FechaN) <br />
+    Sueldo: @Html.TextBoxFor(x => x.Sueldo) <br />
+    Es fijo: @Html.CheckBoxFor(x => x.EsFijo) <br />
+   <input class="btn btn-sm btn-success" type="submit" value="Enviar" />
+</form>
