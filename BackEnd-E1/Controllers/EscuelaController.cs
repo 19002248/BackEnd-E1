@@ -37,10 +37,26 @@ namespace BackEnd_E1.Controllers
                 FechaN = new DateTime(2000,1,1),
                 Sueldo=250,
                 EsFijo = true
-                };
+            };
 
             ViewBag.Trabajador = trab;
             return View(trab);
+        }
+        public List<SelectListItem> ObtenerListado()
+        {
+            return new List<SelectListItem>()
+            {
+                new SelectListItem()
+                {
+                    Text="Sí",
+                    Value="1"
+                },
+                new SelectListItem()
+                {
+                    Text="No",
+                    Value="2"
+                },
+            };
         }
     }
 }

@@ -181,6 +181,7 @@
     <Content Include="Views\Escuela\Agregar2.cshtml" />
     <Content Include="Views\Escuela\DisplayTemplates\Boolean.cshtml" />
     <Content Include="Views\Escuela\DisplayTemplates\DateTime.cshtml" />
+    <Content Include="Views\Escuela\EditorTemplates\DateTime.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
